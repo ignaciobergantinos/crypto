@@ -49,7 +49,7 @@ def getSum():
 
 def getTime():
   now = datetime.datetime.now()
-  hora = str(now.hour) + ":" + str(now.minute)
+  hora = str(now.hour - 3) + ":" + str(now.minute)
   return hora
 
 def sendNotificationPhone(title, message, type):
