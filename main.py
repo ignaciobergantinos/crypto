@@ -16,7 +16,7 @@ tokens = {
   "DSBOWL" : ["0x6a43f8f4b12fcd3b3eb86b319f92eb17c955dda3","https://coinmarketcap.com/dexscan/bsc/0x2515f9c1f0f88dcccffc40ab9660ba8cdfe239d3", 180743.796937320358836921],
   "TOMORROWLAND" :  ['0x58c2cc04b2859916c5e5683545b349df3d7530b8', "https://coinmarketcap.com/dexscan/bsc/0x103d6f7d33fa24865db97b39be3b25443978983e", 19028.354888281089418229],
   "CHINESE_NEW_YEAR" : ["0xdaB9cdB7753e206948ECd691166B33a93693eb75","https://coinmarketcap.com/dexscan/bsc/0xa1178c9d5d66d761c1947f6df3f9279dbd4ad6b7", 226775.992903966],
-  "BRAZIL_KING" : ["0xbc7c6e3f8ba62070e3e157e2928d988d59ba752b","https://coinmarketcap.com/dexscan/bsc/0x5ff0f97b605a4678b11024b8cba5a69bdeaaf70d", 37649.117497544942407324],
+  "FLOKI123" : ["0x0f1e37df0d48bce3f47453bb665a0e14b704a020","https://coinmarketcap.com/dexscan/bsc/0x74ff0e29e45f3dcceafa79263b622ffd4d30a9c3", 129567597406.52865],
 }
 
 def main():
