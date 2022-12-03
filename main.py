@@ -61,7 +61,7 @@ def getTime():
     minutes = "0" + str(now.minute)
 
   if (now.hour) <= 3:
-    return str(now.hour - 3 + 24) + ":" + minutes
+    return str(now.hour + 21) + ":" + minutes
   else:
     return str(now.hour - 3) + ":" + minutes
 
