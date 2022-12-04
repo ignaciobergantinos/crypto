@@ -12,6 +12,7 @@ tokens = {
   "CNY__" : ["0xdaB9cdB7753e206948ECd691166B33a93693eb75","https://coinmarketcap.com/dexscan/bsc/0xa1178c9d5d66d761c1947f6df3f9279dbd4ad6b7", 226775.992903966, 50, 50],
   "RABIT" : ["0x95a1199eba84ac5f19546519e287d43d2f0e1b41","https://coinmarketcap.com/dexscan/bsc/0x04b56a5b3f45cfeafbfdcfc999c14be5434f2146", 24809, 49.5, 500],
   "MEC__" : ["0x4b264f0b2dcbe5a63fb8734d76a644236680ce2d","https://coinmarketcap.com/dexscan/bsc/0xd227f7c2a5b152c3757d1324b31b8fe414fe77ca", 1840000, 41, 300],
+  "SBOWL" : ["0x327bd7E823fe251EC960EeB937cF359149833caC","https://coinmarketcap.com/dexscan/bsc/0xd227f7c2a5b152c3757d1324b31b8fe414fe77ca", 29103000, 25, 300],
   "FLOKI" : ["0x0f1e37df0d48bce3f47453bb665a0e14b704a020","https://coinmarketcap.com/dexscan/bsc/0x74ff0e29e45f3dcceafa79263b622ffd4d30a9c3", 129567597406.52865, 8.57, 100],
   "QATAR" : ['0x238f5cc8bd082895d1f832cef967e7bb7ba4f992',"https://coinmarketcap.com/dexscan/bsc/0xf1d85613b7cb69460e9cd8565f9793448ecbc83c", 35680.6657466065048718,5, 50],
   "SANTA" : ['0x3b58989f6b11e0a348e0b0fee1a8139e7cf2753e',"https://coinmarketcap.com/dexscan/bsc/0x35182c82717cfffd63bf53990721517794b7a314", 31207426106.657056026, 5, 50],
