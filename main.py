@@ -10,7 +10,8 @@ tokens = {
   "NYT__" : ["0xfdff7a8eda6a3739132867f989be4bf84e803c15","https://coinmarketcap.com/dexscan/bsc/0x6dcb370b61b9ee192082a1c42fa994f767916754", 190000, 480, 5000],
   "FLOKY" : ["0x4a01d24aa894530f83fa3764c584fc75885762b4", "https://coinmarketcap.com/dexscan/bsc/0x331b77297fa9acfbf2d73aa7feb693a335efb994", 825171.882619393,200, 2000],
   "CHRIS" : ['0xc51a7658022bae406900536525877a6dec99c34c',"https://coinmarketcap.com/dexscan/bsc/0x824147f9da7185aeb7e8aa27b102dbef6ca9d690", 48611.243960888,100 , 500],
-  "FLOV" : ['0xCA1E6F584E0d7EEc74F553E9a7B64a4DeD8A4b61',"https://coinmarketcap.com/dexscan/bsc/0x0b21b50aa725fc4977b4a215423d44a9d0db6d19", 299394000000, 100 , 1000],
+  "FLOV_" : ['0xCA1E6F584E0d7EEc74F553E9a7B64a4DeD8A4b61',"https://coinmarketcap.com/dexscan/bsc/0x0b21b50aa725fc4977b4a215423d44a9d0db6d19", 299394000000, 100 , 1000],
+  "SCOIN" : ['0x4f1a6fc6a7b65dc7ebc4eb692dc3641be997c2f2',"https://coinmarketcap.com/dexscan/bsc/0xfdf3b6a027839a30a5de3e355708fd45c323f7ec", 44998400000, 100 , 500],
   "CNY__" : ["0xdaB9cdB7753e206948ECd691166B33a93693eb75","https://coinmarketcap.com/dexscan/bsc/0xa1178c9d5d66d761c1947f6df3f9279dbd4ad6b7", 226775.992903966, 50, 50],
   "RABIT" : ["0x95a1199eba84ac5f19546519e287d43d2f0e1b41","https://coinmarketcap.com/dexscan/bsc/0x04b56a5b3f45cfeafbfdcfc999c14be5434f2146", 24809, 49.5, 500],
   "MEC__" : ["0x4b264f0b2dcbe5a63fb8734d76a644236680ce2d","https://coinmarketcap.com/dexscan/bsc/0xd227f7c2a5b152c3757d1324b31b8fe414fe77ca", 1840000, 41, 300],
@@ -57,6 +58,7 @@ def getPrices():
 def getSumOfPrices(prices, hora):
   total = 0
   message = ""
+  totalInitialInvestment = 0
 
   for symbol in tokens:
     contract = tokens[symbol][0]
@@ -64,6 +66,7 @@ def getSumOfPrices(prices, hora):
     tokensQuantity = tokens[symbol][2]
     initialInvestment = tokens[symbol][3]
     expectedReturn = tokens[symbol][4]
+    totalInitialInvestment += initialInvestment
 
     try: 
         price = prices[urlToken]
@@ -74,10 +77,12 @@ def getSumOfPrices(prices, hora):
         message += symbol + ": $" + str(round(price * tokensQuantity, 2)) + " | " + earnings + " | " + percentage + "\n"
         total += money
 
+
+
     except Exception as err:
       print(err)
 
-  totalMessage = "$" + str(round(total, 2)) + "\n"
+  totalMessage = "$" + str(round(total, 2)) +" | $" + str(totalInitialInvestment) + "\n"
   print("-------------")
   print("Total: $" + str(round(total, 2)))
 
