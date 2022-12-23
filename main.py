@@ -13,7 +13,7 @@ tokens = {
   "CHRIS" : ['0xc51a7658022bae406900536525877a6dec99c34c',"https://coinmarketcap.com/dexscan/bsc/0x824147f9da7185aeb7e8aa27b102dbef6ca9d690", 48611.243960888,100 , 250],
   "MCT__" : ["0x15e596aecb199d94bbf7869b42273f9e8bcc9fa1","https://coinmarketcap.com/dexscan/bsc/0xf26b58df2f3fe4dcf625908a592cfa6e1ea5a40a", 219331.4473140, 50, 250],
   "SFLOK" : ["0x14940169e2db1595cdd3cacd30decc5bbb4d9f19","https://coinmarketcap.com/dexscan/bsc/0x0fabba0a03879e1b5a114214fbbe1485dec5e4f9", 498360, 50, 150],
-  "CFLOC" : ["0xe5765e33e349b2dcf22a37b2b4e87c10ad43f165","https://coinmarketcap.com/dexscan/bsc/0x066a9f7b67070cf409314afa648dbd8d66866c7b", 31223300, 50, 100],
+  "CFLOC" : ["0xe5765e33e349b2dcf22a37b2b4e87c10ad43f165","https://coinmarketcap.com/dexscan/bsc/0x066a9f7b67070cf409314afa648dbd8d66866c7b", 133380000, 50, 100],
   "NYC__" : ["0x3307381db5ef1fe6c770116304e2c37024023f49","https://coinmarketcap.com/dexscan/bsc/0xf0abba03cfb987f0d23f8c049c7bfbd96fcf7bba", 8166410, 10, 50],
   "CMUSK" : ["0x716130205547C093354eAbAcA56294571B938B3B","https://coinmarketcap.com/dexscan/bsc/0x134f781574722fbf4d7701afda808ed36028bffe", 37.613581481, 10, 50],
   "MEC__" : ["0x4b264f0b2dcbe5a63fb8734d76a644236680ce2d","https://coinmarketcap.com/dexscan/bsc/0xd227f7c2a5b152c3757d1324b31b8fe414fe77ca", 1840000, 41, 50],
