@@ -8,7 +8,7 @@ import datetime
 
 tokens = { 
   "NYT__" : ["0xfdff7a8eda6a3739132867f989be4bf84e803c15","https://coinmarketcap.com/dexscan/bsc/0x6dcb370b61b9ee192082a1c42fa994f767916754", 190000, 480, 2000],
-  # "FLOKY" : ["0x4a01d24aa894530f83fa3764c584fc75885762b4", "https://coinmarketcap.com/dexscan/bsc/0x331b77297fa9acfbf2d73aa7feb693a335efb994", 0,0, 2000],
+  "FLOKY" : ["0x4a01d24aa894530f83fa3764c584fc75885762b4", "https://coinmarketcap.com/dexscan/bsc/0x331b77297fa9acfbf2d73aa7feb693a335efb994", 43899.1, 49, 250],
   "Sinu" : ["0x4d496efc21754481fe7a9f3f0f758785ade8e1d3","https://coinmarketcap.com/dexscan/bsc/0x2cedc038aa6a8b481e8a20d323f83f2718beec1f", 235000000000, 50, 250],
   "CHRIS" : ['0xc51a7658022bae406900536525877a6dec99c34c',"https://coinmarketcap.com/dexscan/bsc/0x824147f9da7185aeb7e8aa27b102dbef6ca9d690", 48611.243960888,100 , 250],
   "MCT__" : ["0x15e596aecb199d94bbf7869b42273f9e8bcc9fa1","https://coinmarketcap.com/dexscan/bsc/0xf26b58df2f3fe4dcf625908a592cfa6e1ea5a40a", 219331.4473140, 50, 250],
@@ -18,7 +18,10 @@ tokens = {
   "CMUSK" : ["0x716130205547C093354eAbAcA56294571B938B3B","https://coinmarketcap.com/dexscan/bsc/0x134f781574722fbf4d7701afda808ed36028bffe", 37.613581481, 10, 50],
   "MEC__" : ["0x4b264f0b2dcbe5a63fb8734d76a644236680ce2d","https://coinmarketcap.com/dexscan/bsc/0xd227f7c2a5b152c3757d1324b31b8fe414fe77ca", 1840000, 41, 50],
   "CFLOKI" : ["0x0f1e37df0d48bce3f47453bb665a0e14b704a020","https://coinmarketcap.com/dexscan/bsc/0x74ff0e29e45f3dcceafa79263b622ffd4d30a9c3", 129567597406.52865, 8.57, 30],
-
+  "NYR" : ["0x52b4f554766b028337e9047c8b916e520c3aa726","https://coinmarketcap.com/dexscan/bsc/0xe1c4fd30d4e04e337fd78d5856a0d39d6d70df8d", 13535131.160214643, 50, 150],
+  "MOON" : ["0xa27cf315b7f9e529f3d56223a5c3a590b6100e15","https://coinmarketcap.com/dexscan/bsc/0x304491098c9d146f1beb1ee64c77334ddf41a056", 28933100, 50, 150],
+  "SShiba" : ["0x52b4f554766b028337e9047c8b916e520c3aa726","https://coinmarketcap.com/dexscan/bsc/0xe2b78759d4779a6448b1995bb6848f4ee32e25f7", 632193.025465214027912389, 50, 150],
+  "TUZI" : ["0x329223fb2619fcf0936e7bb8767081ae3583e705","https://coinmarketcap.com/dexscan/bsc/0x7c3bfe7b9e3f4a831ca719d3e9bab9db0dd887b7", 20998383.850883060298917636, 23, 100],
   "FLOV_" : ['0xCA1E6F584E0d7EEc74F553E9a7B64a4DeD8A4b61',"https://coinmarketcap.com/dexscan/bsc/0x0b21b50aa725fc4977b4a215423d44a9d0db6d19", 299394000000, 100 , 300],
   "CNY__" : ["0xdaB9cdB7753e206948ECd691166B33a93693eb75","https://coinmarketcap.com/dexscan/bsc/0xa1178c9d5d66d761c1947f6df3f9279dbd4ad6b7", 226775.992903966, 50, 500],
   "RABIT" : ["0x95a1199eba84ac5f19546519e287d43d2f0e1b41","https://coinmarketcap.com/dexscan/bsc/0x04b56a5b3f45cfeafbfdcfc999c14be5434f2146", 24809, 49.5, 500],
