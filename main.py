@@ -172,63 +172,6 @@ def getPercentage(earnings, initialInvestment):
   return "P" + str(round(earnings / initialInvestment * 100 - 100, 2))
 
 
-# class bscScan:
-
-#   # def bscScan():
-#   #   CONTRACT = "0xfdff7a8eda6a3739132867f989be4bf84e803c15"
-#   #   URL = "https://api.bscscan.com/api?module=token&action=tokeninfo&contractaddress=" + CONTRACT + "&apikey=" + APIKEY_BSC
-
-#   #   response = requests.post(URL)
-#   #   print(response.content)
-#   #   #  
-
-#   def getAddressListOfTransactions(self, address): #max 10000 records
-#     URL = "https://api.bscscan.com/api?module=account&action=txlist&address=" + address + "&startblock=0&endblock=99999999&page=1&offset=10000&sort=desc&apikey=" + APIKEY_BSC
-#     response = requests.post(URL)
-#     transactions = json.loads((response.content.decode('utf-8')))
-#     for results in transactions:
-#       if results == 'result':
-#         # return transactions[results]
-#         for tx in transactions[results]:
-#           print(tx)
-#           print('----------------------')
-
-#METHODIDS
-# TRANSFER: 0xa9059cbb
-# Approve: 0x095ea7b3
-# renounceOWnerShip: 0x715018a6
-# creation??: 0x60c06040
-# lock: 0x07279357
-# add liquidity: 0xf305d719
-
-  # def contractVerified(self, contract):
-  #   URL = "https://api.bscscan.com/api?module=contract&action=getabi&address=" + contract + "&apikey" + APIKEY_BSC
-  #   response = requests.post(URL)
-  #   ca = json.loads(response.content.decode('utf-8'))
-
-  #   for results in ca:
-  #     if results == 'result':
-  #       if ca[results] == "Contract source code not verified":
-  #         print('Contract Not verified')
-  #         return False
-  #       return True
-
-  # def getAddresbalance(self, address):
-  #   URL = "https://api.bscscan.com/api?module=account&action=balance&address=" + address + "&apikey=" + APIKEY_BSC
-  #   response = requests.post(URL)
-  #   balance = json.loads(response.content.decode('utf-8'))
-  #   return float(balance['result']) / (10 ** 18)
-
-  # def getContractSourceCode(self, contract):
-  #     URL = "https://api.bscscan.com/api?module=contract&action=getsourcecode&address=" + contract + "&apikey" + APIKEY_BSC
-  #     response = requests.post(URL)
-  #     code = json.loads(response.content.decode('utf-8'))
-  #     for results in code:
-  #       if results == 'result':
-  #           return code[results]
-
-
 main()
-text = "NYT__: $606.19 | $126.19 | %126.29 FLOKY: $44.56 | $-4.44 | %90.94 Sinu: $48.3 | $-1.7 | %96.6 CHRIS: $36.03 | $-63.97 | %36.03 MCT__: $55.76 | $5.76 | %111.53 SFLOK: $46.18 | $-3.82 | %92.37 CFLOC: $36.08 | $-13.92 | %72.15 NYC__: $5.52 | $-4.48 | %55.24 CMUSK: $9.71 | $-0.29 | %97.08 MEC__: $11.61 | $-29.39 | %28.32 CFLOKI: $10.51 | $1.94 | %122.69 SShiba: $47.41 | $-2.59 | %94.82 FLOV_: $114.6 | $14.6 | %114.6 CNY__: $46.9 | $-3.1 | %93.8 RABIT: $71.19 | $21.69 | %143.82 CDC__: $10.97 | $-4.03 | %73.13 SBOWL: $22.01 | $-2.99 | %88.04 MRABB: $23.36 | $-1.64 | %93.44"
 
 
