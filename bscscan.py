@@ -1,4 +1,5 @@
-
+import requests, json
+APIKEY_BSC = "5EH88KDIGUYFY6QT5PAC4GZJPQ4TQJCXMD"
 class bscScan:
 
   def bscScan():
@@ -40,7 +41,7 @@ class bscScan:
           return False
         return True
 
-  def getAddresbalance(self, address):
+  def getAddressbalance(self, address):
     URL = "https://api.bscscan.com/api?module=account&action=balance&address=" + address + "&apikey=" + APIKEY_BSC
     response = requests.post(URL)
     balance = json.loads(response.content.decode('utf-8'))
