@@ -96,7 +96,7 @@ def getSumOfPrices(prices, hora):
     print("-------------")
     print("Total: $" + str(round(total, 2)))
 
-    title = hora + " - " + totalMessage
+    title = hora + " - " + totalMessage + "TEST"
     sendNotificationPhone(title, message, "nosound")
 
     return total
