@@ -1,7 +1,7 @@
 import aws, boto3, json
 
 def connectDynamodb():
-    return boto3.client('dynamodb')
+    return boto3.client('dynamodb', region_name='us-east-1')
 
 def getItem():
     DBclient = connectDynamodb()
@@ -18,6 +18,8 @@ def getItem():
 
 
 getItem()
+
+
 # data = client.put_item(
 #   TableName='table-for-saving-picking-time',
 #   Item={
