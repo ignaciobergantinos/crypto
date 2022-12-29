@@ -23,13 +23,50 @@ def getSecretFromAWS(secret_id):
             return base64.b64decode(get_secret_value_response['SecretBinary'])
 
 
+def getBuyTax(item):
+    if item:
+        return item["buyTax"]["N"]
+
+
+def getAccountAddress(item):
+    if item:
+        return item["accountAddress"]["S"]
+
+
+def getLastPrice(item):
+    if item:
+        return item["lastPrice"]["N"]
+
+
+def getTokensAmount(item):
+    if item:
+        return item["tokensAmount"]["N"]
+
+
+def getBuyPrice(item):
+    if item:
+        return item["buyPrice"]["N"]
+
+
+def getSellTax(item):
+    if item:
+        return item["sellTax"]["N"]
+
+
+def getName(item):
+    if item:
+        return item["name"]["S"]
+
+
 class dynamodb:
     def __init__(self):
-        self.item = None
         self.client = boto3.client('dynamodb', region_name='us-east-1')
 
+    def getAllItems(self):
+        return self.client.scan(TableName='cryptoTrades')
+
     def getItem(self, table, contractAddress):
-        self.item = self.client.get_item(
+        item = self.client.get_item(
             TableName=table,  # 'cryptoTrades',
             Key={
                 'contractAddress': {
@@ -37,6 +74,8 @@ class dynamodb:
                 }
             }
         )
+        return item
+        # example: {'Item': {'buyPrice': {'N': '0.002171'}, 'sellTax': {'N': '4.7'}, 'accountAddress': {'S': '0x1DaDE4ca7c68c03b39C34a6f4D26Bb4c8a2264fb'}, 'lastPrice': {'N': '0.00274097'}, 'tokensAmount': {'N': '190000'}, 'buyTax': {'N': '5'}, 'contractAddress': {'S': '0xfdff7a8eda6a3739132867f989be4bf84e803c15'}}, 'ResponseMetadata': {'RequestId': 'ANIFTRV28LG56BK9N7EQV0E97BVV4KQNSO5AEMVJF66Q9ASUAAJG', 'HTTPStatusCode': 200, 'HTTPHeaders': {'server': 'Server', 'date': 'Thu, 29 Dec 2022 01:36:04 GMT', 'content-type': 'application/x-amz-json-1.0', 'content-length': '277', 'connection': 'keep-alive', 'x-amzn-requestid': 'ANIFTRV28LG56BK9N7EQV0E97BVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '1402913086'}, 'RetryAttempts': 0}}
 
     def putItem(self, table, contractAddress, accountAddress, tokensAmount, buyPrice, buyTax, sellTax):
         self.client.put_item(
@@ -62,27 +101,3 @@ class dynamodb:
                 }
             }
         )
-
-    def getBuyPrice(self):
-        if self.item:
-            return self.item["Item"]["buyPrice"]["N"]
-
-    def getSellTax(self):
-        if self.item:
-            return self.item["Item"]["sellTax"]["N"]
-
-    def getBuyTax(self):
-        if self.item:
-            return self.item["Item"]["buyTax"]["N"]
-
-    def getAccountAddress(self):
-        if self.item:
-            return self.item["Item"]["accountAddress"]["S"]
-
-    def getLastPrice(self):
-        if self.item:
-            return self.item["Item"]["lastPrice"]["N"]
-
-    def getTokensAmount(self):
-        if self.item:
-            return self.item["Item"]["tokensAmount"]["N"]
