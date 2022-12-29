@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from lxml import etree
 # from fake_useragent import UserAgent
 import datetime, time
-import secretsManager
+import secretsManager, dynamoDB
 
 # TODO ADD initial investment sum in title
 
@@ -35,7 +35,7 @@ def main():
 
     takeProfitAlert(prices, hora)
 
-    dynamoDBClient = aws
+    dynamoDBClient = dynamoDB.dynamodb()
     dynamoDBClient.getItem("cryptoTrades", '0xfdff7a8eda6a3739132867f989be4bf84e803c15')
     print(dynamoDBClient.getAccountAddress(), dynamoDBClient.getBuyPrice(), dynamoDBClient.getBuyPrice(),
           dynamoDBClient.getBuyTax(), dynamoDBClient.getLastPrice(), dynamoDBClient.getSellTax(),
