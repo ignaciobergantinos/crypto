@@ -1,6 +1,6 @@
 from web3 import Web3, HTTPProvider
 import bscscan
-import aws
+import secretsManager
 
 global web3
 

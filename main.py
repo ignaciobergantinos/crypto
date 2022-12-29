@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from lxml import etree
 # from fake_useragent import UserAgent
 import datetime, time
-import aws
+import secretsManager
 
 # TODO ADD initial investment sum in title
 
