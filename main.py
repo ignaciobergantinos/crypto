@@ -10,8 +10,6 @@ import datetime, time
 
 
 tokens = {
-    "FLOKY": ["0x4a01d24aa894530f83fa3764c584fc75885762b4",
-              "https://coinmarketcap.com/dexscan/bsc/0x331b77297fa9acfbf2d73aa7feb693a335efb994", 43899, 49, 250],
     "FLOV_": ["0xCA1E6F584E0d7EEc74F553E9a7B64a4DeD8A4b61",
               "https://coinmarketcap.com/dexscan/bsc/0x0b21b50aa725fc4977b4a215423d44a9d0db6d19", 299394000000, 100,
               300],
@@ -25,7 +23,7 @@ tokens = {
     "MRABB": ["0xe8b8F7D15473D6821D525aDBC981665A237d5916",
               "https://coinmarketcap.com/dexscan/bsc/0x40df4015656b41ea5b6c065e3ffa550a9f0219a1", 519437277087, 25, 75],
 }
-
+#0x037D70234EeA7D05e8cd6796D89Bc37A2Ac45DE9
 
 def main():
     hora = getTime()

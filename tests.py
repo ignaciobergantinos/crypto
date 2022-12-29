@@ -1,11 +1,43 @@
-import awsSecrets
+import aws, boto3, json
 
-account1 = "0x1DaDE4ca7c68c03b39C34a6f4D26Bb4c8a2264fb"
-account2 = "0x282FaE0F5Cd3568e60883AeB3993c558D95e8743"
+def connectDynamodb():
+    return boto3.client('dynamodb')
 
-def getPrivateKey(account):
-  return awsSecrets.get_secrets(account)['private_key']
+def getItem():
+    DBclient = connectDynamodb()
+
+    item = DBclient.get_item(
+      TableName='cryptoTrades',
+      Key={
+        'id': {
+          'contractAddress': '0xfdff7a8eda6a3739132867f989be4bf84e803c15'
+        }
+      }
+    )
+    print(item)
 
 
-
-print(getPrivateKey(account2))
+getItem()
+# data = client.put_item(
+#   TableName='table-for-saving-picking-time',
+#   Item={
+#     'id': {
+#       'S': id,
+#     },
+#     "bodega": {
+#       "S": bodega
+#     },
+#     "StartTimeDate": {
+#       "S": startDate
+#     },
+#     "FinishTimeDate": {
+#       "S": finishDate
+#     },
+#     "StartTimeHour": {
+#       "S": startHour
+#     },
+#     "FinishTimeHour": {
+#       "S": finishHour
+#     }
+#   }
+# )
