@@ -39,7 +39,7 @@ def transferBNB(fromAccount, toAccount, quantity):
 
 
 def getPrivateKey(account):
-    return aws.getSecretFromAWS(account)['private_key']
+    return secretsManager.getSecretFromAWS(account)['private_key']
 
 
 main()
