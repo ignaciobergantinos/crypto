@@ -3,7 +3,7 @@ import aws, boto3, json
 def connectDynamodb():
     return boto3.client('dynamodb', region_name='us-east-1')
 
-def getItem():
+def getDBitem():
     DBclient = connectDynamodb()
 
     item = DBclient.get_item(
@@ -17,7 +17,7 @@ def getItem():
     print(item)
 
 
-getItem()
+getDBitem()
 
 
 # data = client.put_item(
