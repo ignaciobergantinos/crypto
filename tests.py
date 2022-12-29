@@ -9,7 +9,7 @@ def getItem():
     item = DBclient.get_item(
       TableName='cryptoTrades',
       Key={
-        'id': {
+        'S': {
           'contractAddress': '0xfdff7a8eda6a3739132867f989be4bf84e803c15'
         }
       }
