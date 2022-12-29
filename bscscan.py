@@ -2,7 +2,7 @@ import requests, json
 APIKEY_BSC = "5EH88KDIGUYFY6QT5PAC4GZJPQ4TQJCXMD"
 class bscScan:
 
-  def bscScan():
+  def bscScan(self):
     CONTRACT = "0xfdff7a8eda6a3739132867f989be4bf84e803c15"
     URL = "https://api.bscscan.com/api?module=token&action=tokeninfo&contractaddress=" + CONTRACT + "&apikey=" + APIKEY_BSC
 
