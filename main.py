@@ -29,7 +29,7 @@ tokens = {
    "4TH": ["0xD3E371dB6977eEeAa338bA86c90Df2Fb3b5993d6",
               "https://coinmarketcap.com/dexscan/bsc/0x7f46eacdfa01834c161aa71b66583e32eb90f7d6", 13769400, 25,
               250],
-    "cupid": ["0xD3E371dB6977eEeAa338bA86c90Df2Fb3b5993d6",
+    "cupid": ["0x8E13db5c015f7790446B38701487087981bd2589",
               "https://coinmarketcap.com/dexscan/bsc/0x678d922f7b4c833308ac7f34f510380802cc22b6", 62610.3, 25,
               250],
 
