@@ -25,6 +25,9 @@ tokens = {
               "https://coinmarketcap.com/dexscan/bsc/0x40df4015656b41ea5b6c065e3ffa550a9f0219a1", 519437277087, 25, 75],
    "SPI": ["0x69b14e8d3cebfdd8196bfe530954a0c226e5008e",
               "https://coinmarketcap.com/dexscan/bsc/0x7f1b11a798273da438b4b132df1383d8387e73b4", 48384400000, 50,
+              300],
+   "4TH": ["0xD3E371dB6977eEeAa338bA86c90Df2Fb3b5993d6",
+              "https://coinmarketcap.com/dexscan/bsc/0x7f46eacdfa01834c161aa71b66583e32eb90f7d6", 13769400, 25,
               250],
 
 } #https://coinmarketcap.com/dexscan/bsc/0x7f1b11a798273da438b4b132df1383d8387e73b4
@@ -106,7 +109,7 @@ def getSumOfPrices(prices, hora):
     print("-------------")
     print("Total: $" + str(round(total, 2)))
 
-    title = hora + " - " + totalMessage + "TEST"
+    title = hora + " - " + totalMessage 
     sendNotificationPhone(title, message, "nosound")
 
     return total
