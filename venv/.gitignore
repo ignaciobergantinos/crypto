@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+*
+credentialConfig
+.idea
+__pycache__/*
+__pycache__/*
