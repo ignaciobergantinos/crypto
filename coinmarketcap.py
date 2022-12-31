@@ -4,8 +4,6 @@ import customTime
 import secretsManager, dynamoDB
 import notificationPhone
 
-
-
 tokens = {
     "FLOV_": ["0xCA1E6F584E0d7EEc74F553E9a7B64a4DeD8A4b61",
               "https://coinmarketcap.com/dexscan/bsc/0x0b21b50aa725fc4977b4a215423d44a9d0db6d19", 299394000000, 100,
@@ -19,10 +17,10 @@ tokens = {
               "https://coinmarketcap.com/dexscan/bsc/0x84e1602ab61272dc90643e24568e78af0fdf8940", 29103000, 25, 3000],
     "MRABB": ["0xe8b8F7D15473D6821D525aDBC981665A237d5916",
               "https://coinmarketcap.com/dexscan/bsc/0x40df4015656b41ea5b6c065e3ffa550a9f0219a1", 519437277087, 25, 75],
-   "SpacePi": ["0x69b14e8d3cebfdd8196bfe530954a0c226e5008e",
-              "https://coinmarketcap.com/dexscan/bsc/0x7f1b11a798273da438b4b132df1383d8387e73b4", 48384400000, 50,
-              300],
-   "4TH__": ["0xD3E371dB6977eEeAa338bA86c90Df2Fb3b5993d6",
+    "SpacePi": ["0x69b14e8d3cebfdd8196bfe530954a0c226e5008e",
+                "https://coinmarketcap.com/dexscan/bsc/0x7f1b11a798273da438b4b132df1383d8387e73b4", 48384400000, 50,
+                300],
+    "4TH__": ["0xD3E371dB6977eEeAa338bA86c90Df2Fb3b5993d6",
               "https://coinmarketcap.com/dexscan/bsc/0x7f46eacdfa01834c161aa71b66583e32eb90f7d6", 13769400, 25,
               250],
     "cupid": ["0x8E13db5c015f7790446B38701487087981bd2589",
@@ -30,8 +28,6 @@ tokens = {
               250],
 
 }
-
-
 
 
 def getEarnings(money, initialInvestment):

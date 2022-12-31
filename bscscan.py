@@ -1,6 +1,7 @@
 import requests, json, secretsManager
 APIKEY_BSC = secretsManager.getSecretFromAWS("APIKEY_BSC")
 
+
 class bscScan:
 
   def bscScan(self):
