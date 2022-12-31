@@ -6,7 +6,7 @@ import notificationPhone
 
 tokens = {
     "FLOV_": ["0xCA1E6F584E0d7EEc74F553E9a7B64a4DeD8A4b61",
-              "https://coinmarketcap.com/dexscan/bsc/0x0b21b50aa725fc4977b4a215423d44a9d0db6d19", 299394000000, 100,
+              "https://coinmarketcap.com/dexscan/bsc/0x0b21b50aa725fc4977b4a215423d44a9d0db6d19", 89898900000, 50,
               300],
     "CNY__": ["0xdaB9cdB7753e206948ECd691166B33a93693eb75",
               "https://coinmarketcap.com/dexscan/bsc/0xa1178c9d5d66d761c1947f6df3f9279dbd4ad6b7", 226775.992903966, 50,
