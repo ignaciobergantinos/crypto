@@ -31,7 +31,6 @@ tokens = {
 
 }
 
-APIKEY_BSC = secretsManager.getSecretFromAWS("APIKEY_BSC")
 
 
 
