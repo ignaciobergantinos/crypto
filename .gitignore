@@ -1,3 +1,5 @@
 
 credentialConfig
 credentialConfig.sh
+__pycache__/bscscan.cpython-310.pyc
+*.pyc
