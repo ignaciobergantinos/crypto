@@ -30,6 +30,10 @@ tokens = {
               "https://coinmarketcap.com/dexscan/bsc/0x678d922f7b4c833308ac7f34f510380802cc22b6", 62610.3, 25,
               250],
 
+    "t23": ["0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+                  "https://coinmarketcap.com/dexscan/bsc/0x678d922f7b4c833308ac7f34f510380802cc22b6", 3044870000, 50,
+                  150],
+
 }
 
 
