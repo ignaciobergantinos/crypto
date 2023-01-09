@@ -29,10 +29,13 @@ tokens = {
     "cupid": ["0x8E13db5c015f7790446B38701487087981bd2589",
               "https://coinmarketcap.com/dexscan/bsc/0x678d922f7b4c833308ac7f34f510380802cc22b6", 62610.3, 25,
               250],
+    "KUNCI": ["0x6cf271270662be1c4fc1b7bb7d7d7fc60cc19125",
+                  "https://coinmarketcap.com/dexscan/bsc/0x07852d688aef742c477ede84deac1287a51814c5", 2620, 50,
+                  100]
 
-    "t23": ["0x897F2BE515373Cf1F899D864B5Be2bD5eFd4e653",
-                  "https://coinmarketcap.com/dexscan/bsc/0xa03aad7f025a6e0f7c322945d7193229331d4646", 3044870000, 50,
-                  150],
+    # "t23": ["0x897F2BE515373Cf1F899D864B5Be2bD5eFd4e653",
+    #               "https://coinmarketcap.com/dexscan/bsc/0xa03aad7f025a6e0f7c322945d7193229331d4646", 3044870000, 0,
+    #               250],
 
 }
 
