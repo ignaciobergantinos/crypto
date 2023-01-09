@@ -11,6 +11,9 @@ tokens = {
     "FLOV_": ["0xCA1E6F584E0d7EEc74F553E9a7B64a4DeD8A4b61",
               "https://coinmarketcap.com/dexscan/bsc/0x0b21b50aa725fc4977b4a215423d44a9d0db6d19", 89898900000, 50,
               300],
+    "shinj": ["0x6dfd3103E680e85A4e1fB4903Ec4E99bDfAfC182",
+                      "https://coinmarketcap.com/dexscan/bsc/0x9ecdb3b3fd01184b7568d4f789fd350867140e77", 279557000000, 28,
+                      60],
     "CNY__": ["0xdaB9cdB7753e206948ECd691166B33a93693eb75",
               "https://coinmarketcap.com/dexscan/bsc/0xa1178c9d5d66d761c1947f6df3f9279dbd4ad6b7", 226775.992903966, 50,
               500],
@@ -31,7 +34,7 @@ tokens = {
               250],
     "KUNCI": ["0x6cf271270662be1c4fc1b7bb7d7d7fc60cc19125",
                   "https://coinmarketcap.com/dexscan/bsc/0x07852d688aef742c477ede84deac1287a51814c5", 2620, 50,
-                  100]
+                  100],
 
     # "t23": ["0x897F2BE515373Cf1F899D864B5Be2bD5eFd4e653",
     #               "https://coinmarketcap.com/dexscan/bsc/0xa03aad7f025a6e0f7c322945d7193229331d4646", 3044870000, 0,
